@@ -1,0 +1,163 @@
+/* ===== MIS COMPRAS STYLES ===== */
+
+.compras-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.compras-header .eyebrow {
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.75rem;
+  color: var(--muted);
+  margin-bottom: 10px;
+}
+
+.compras-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.compras-header h1 {
+  font-family: var(--font-heading);
+  color: var(--accent);
+  font-size: 2.8rem;
+  text-transform: uppercase;
+}
+
+.compras-header p {
+  color: var(--muted);
+  max-width: 600px;
+  margin: 12px auto 0;
+}
+
+.compras-alert {
+  margin-bottom: 30px;
+  padding: 14px 18px;
+  background: rgba(0, 180, 216, 0.1);
+  border: 1px solid rgba(0, 180, 216, 0.3);
+  color: var(--accent);
+  border-radius: 12px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.compras-empty {
+  text-align: center;
+  padding: 60px 0 80px;
+}
+
+.compras-empty .icon {
+  font-size: 3rem;
+  opacity: 0.15;
+  margin-bottom: 12px;
+}
+
+.compra-card {
+  background: var(--card);
+  border: 1px solid var(--glass-border);
+  border-radius: 24px;
+  padding: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+  transition: var(--transition-smooth);
+}
+
+.compra-card:hover {
+  border-color: rgba(0, 190, 240, 0.3);
+  transform: translateY(-5px);
+}
+
+.compra-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 25px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.compra-id {
+  color: var(--accent);
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+.compra-fecha {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.compra-productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.compra-producto-item {
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 16px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border: 1px solid transparent;
+  transition: var(--transition-fast);
+}
+
+.compra-producto-item:hover {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.compra-producto-item img {
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.compra-producto-info h4 {
+  color: var(--white);
+  font-size: 1rem;
+  margin: 0 0 5px 0;
+}
+
+.compra-producto-info p {
+  color: var(--muted);
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+.compra-footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 25px;
+  gap: 20px;
+}
+
+.compra-total-label {
+  color: var(--muted);
+  font-size: 1.1rem;
+}
+
+.compra-total-val {
+  color: var(--success);
+  font-size: 1.6rem;
+  font-weight: 800;
+}
+
+.btn-volver-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+  .compra-header {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

@@ -1,0 +1,35 @@
+/* ===== EDITAR RUTINA STYLES ===== */
+
+.input-premium {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--glass-border);
+  border-radius: 12px;
+  padding: 15px 20px;
+  color: var(--white);
+  font-size: 1.1rem;
+  font-family: var(--font-main);
+  transition: var(--transition-fast);
+}
+
+.input-premium:focus {
+  outline: none;
+  border-color: var(--accent);
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 20px rgba(0, 180, 216, 0.1);
+}
+
+.label-muted {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+/* Reduse standard UI for nested structure */
+.form-section {
+  border-radius: 20px;
+}

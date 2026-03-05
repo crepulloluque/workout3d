@@ -1,0 +1,533 @@
+/* ===== ENTRENAR STYLES ===== */
+
+.entrenar-container {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 60px;
+}
+
+.entrenar-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.entrenar-header h1 {
+    font-family: var(--font-heading);
+    color: var(--white);
+    font-size: 3rem;
+    margin-bottom: 12px;
+}
+
+.entrenar-header p {
+    color: var(--muted);
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+.dias-selector {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.dia-btn-entrenar {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--glass-border);
+    color: var(--white);
+    padding: 12px 24px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: var(--transition-smooth);
+}
+
+.dia-btn-entrenar:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: var(--accent);
+}
+
+.dia-btn-entrenar.active {
+    background: var(--accent);
+    color: #000;
+    border-color: var(--accent);
+    box-shadow: 0 0 20px var(--accent-glow);
+}
+
+.controles-entrenamiento {
+    background: rgba(0, 180, 216, 0.05);
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 40px;
+    text-align: center;
+    border: 1px solid rgba(0, 180, 216, 0.2);
+}
+
+.temporizador {
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--accent);
+    margin-bottom: 20px;
+    font-family: var(--font-heading);
+    text-shadow: 0 0 20px var(--accent-glow);
+}
+
+.botones-control {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.btn-control {
+    padding: 12px 25px;
+    border-radius: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.btn-control.primary {
+    background: var(--accent);
+    color: #000;
+}
+
+.btn-control.secondary {
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--white);
+}
+
+.btn-control:hover {
+    transform: translateY(-3px);
+    filter: brightness(1.2);
+}
+
+/* Ejercicio Cards */
+.ejercicio-card {
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 25px;
+    border: 1px solid var(--glass-border);
+    transition: var(--transition-smooth);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.ejercicio-card:hover {
+    background: rgba(255, 255, 255, 0.04);
+    border-color: var(--accent);
+}
+
+.ejercicio-info h3 {
+    font-family: var(--font-heading);
+    color: var(--accent);
+    font-size: 1.6rem;
+    margin-bottom: 12px;
+}
+
+.ejercicio-desc {
+    color: var(--muted);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.ejercicio-meta {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.series-badge,
+.reps-badge,
+.dificultad-badge {
+    background: rgba(0, 180, 216, 0.1);
+    color: var(--accent);
+    padding: 6px 16px;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    border: 1px solid rgba(0, 180, 216, 0.3);
+}
+
+/* Series Tracking */
+.series-tracking {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.serie-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 25px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 16px;
+    border: 1px solid var(--glass-border);
+    transition: var(--transition-smooth);
+}
+
+.serie-row.completada {
+    background: rgba(46, 194, 134, 0.1);
+    border-color: var(--success);
+}
+
+.serie-numero {
+    font-weight: 700;
+    color: var(--accent);
+    font-size: 1.1rem;
+}
+
+.serie-inputs {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.serie-inputs label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+
+.peso-input,
+.reps-input {
+    width: 80px;
+    padding: 8px 12px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--glass-border);
+    border-radius: 8px;
+    color: var(--white);
+    text-align: center;
+    font-weight: 700;
+    font-size: 1rem;
+    transition: var(--transition-fast);
+}
+
+.peso-input:focus,
+.reps-input:focus {
+    outline: none;
+    border-color: var(--accent);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.serie-check-btn {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid var(--glass-border);
+    color: var(--white);
+    cursor: pointer;
+    transition: var(--transition-smooth);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.serie-check-btn:hover {
+    border-color: var(--success);
+    background: rgba(46, 194, 134, 0.1);
+}
+
+.serie-check-btn.completada {
+    background: var(--success);
+    border-color: var(--success);
+    color: #000;
+    box-shadow: 0 0 15px rgba(46, 194, 134, 0.3);
+}
+
+/* Finalizar Entrenamiento */
+#formFinalizar {
+    margin-top: 50px;
+    padding-top: 30px;
+    border-top: 1px solid var(--glass-border);
+}
+
+#formFinalizar textarea {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--glass-border);
+    border-radius: 16px;
+    padding: 20px;
+    color: var(--white);
+    margin-bottom: 25px;
+    resize: vertical;
+    min-height: 120px;
+}
+
+.btn-finalizar {
+    background: linear-gradient(90deg, var(--success), #5ce0a8);
+    color: #000;
+    padding: 18px;
+    border-radius: 16px;
+    font-weight: 800;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    transition: var(--transition-smooth);
+}
+
+.btn-finalizar:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(46, 194, 134, 0.3);
+}
+
+/* Modal Video */
+.modal-video {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.95);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    padding: 20px;
+}
+
+.modal-video-content {
+    background: var(--bg-darker);
+    border: 1px solid var(--glass-border);
+    border-radius: 24px;
+    padding: 30px;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.8);
+    max-width: 900px;
+    width: 100%;
+    position: relative;
+    animation: slideInUp 0.3s ease-out;
+}
+
+.modal-close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 32px;
+    cursor: pointer;
+    color: var(--muted);
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+.modal-close:hover {
+    color: var(--danger);
+    transform: rotate(90deg);
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 16px;
+    background: #000;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Timer Descanso */
+#timerDescansoDisplay {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(135deg, rgba(15, 19, 21, 0.98), rgba(26, 26, 46, 0.98));
+    backdrop-filter: blur(25px);
+    padding: 45px;
+    border-radius: 32px;
+    box-shadow: 0 25px 70px rgba(0, 180, 216, 0.3), 0 0 120px rgba(0, 0, 0, 0.9);
+    z-index: 10000;
+    border: 1px solid rgba(0, 190, 240, 0.3);
+    text-align: center;
+    animation: fadeInScale 0.4s var(--transition-smooth);
+}
+
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+.timer-circle {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    margin: 0 auto 30px;
+}
+
+.timer-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.timer-numero {
+    font-size: 3.2rem;
+    font-weight: 900;
+    color: var(--accent);
+    font-family: var(--font-heading);
+    text-shadow: 0 0 25px var(--accent-glow);
+}
+
+.timer-label {
+    font-size: 0.9rem;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.timer-ring-progress {
+    transition: stroke-dashoffset 1s linear;
+    stroke: var(--accent);
+}
+
+.timer-controls {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.timer-btn {
+    padding: 14px 22px;
+    border-radius: 14px;
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+    transition: var(--transition-fast);
+}
+
+.timer-btn:hover {
+    transform: translateY(-3px);
+    filter: brightness(1.2);
+}
+
+.timer-btn-minus {
+    background: rgba(230, 57, 70, 0.2);
+    color: var(--danger);
+    border: 1px solid rgba(230, 57, 70, 0.3);
+}
+
+.timer-btn-plus {
+    background: rgba(0, 180, 216, 0.2);
+    color: var(--accent);
+    border: 1px solid rgba(0, 180, 216, 0.3);
+}
+
+.timer-btn-skip {
+    background: var(--accent);
+    color: #000;
+}
+
+.config-descanso {
+    text-align: center;
+    margin: 30px auto;
+    padding: 20px 30px;
+    max-width: 400px;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 16px;
+    border: 1px solid var(--glass-border);
+}
+
+.config-descanso label {
+    font-weight: 700;
+    color: var(--accent);
+    margin-right: 15px;
+}
+
+.config-descanso select {
+    background: rgba(0, 0, 0, 0.3);
+    color: var(--white);
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 1px solid var(--glass-border);
+    cursor: pointer;
+}
+
+.modo-toggle {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.modo-btn {
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--muted);
+    border: 1px solid var(--glass-border);
+    cursor: pointer;
+    transition: var(--transition-fast);
+}
+
+.modo-btn.active {
+    background: var(--accent);
+    color: #000;
+    border-color: var(--accent);
+}
+
+@media (max-width: 768px) {
+    .entrenar-container {
+        padding: 30px 20px;
+    }
+
+    .serie-inputs {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .peso-input,
+    .reps-input {
+        width: 100%;
+    }
+
+    .timer-circle {
+        width: 140px;
+        height: 140px;
+    }
+
+    .timer-numero {
+        font-size: 2.2rem;
+    }
+}

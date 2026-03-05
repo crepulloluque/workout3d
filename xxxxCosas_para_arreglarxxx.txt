@@ -1,0 +1,39 @@
+📋 PRÓXIMAS TAREAS SUGERIDAS
+============================
+
+PRIORIDAD ALTA:
+- [ ] Añadir modelos 3D a las páginas espalda y hombros (MusculosDbSeeder)
+- [ ] Implementar recuperación de contraseña (password reset)
+- [ ] Añadir verificación de email con OTP
+- [ ] Añadir fotos de progreso (galería antes/después)
+- [ ] Notificaciones por email (Laravel Mailable)
+
+PRIORIDAD MEDIA:
+- [ ] Retos sociales de 30 días (gamificación)
+- [ ] Compartir rutinas con código único
+- [ ] Sistema de logros y badges
+- [ ] Modo "Entreno Activo" con timer y sonidos
+- [ ] Integración con APIs externas (recetas, Spotify)
+
+PRIORIDAD BAJA:
+- [ ] Chat/comunidad entre usuarios
+- [ ] Integración con wearables (Fitbit, Apple Watch)
+- [ ] App móvil (React Native / Flutter)
+- [ ] Sistema de recomendaciones con IA
+
+🚀 COMANDOS ÚTILES
+==================
+
+Iniciar proyecto:
+1. Laragon → Start All
+2. Abrir: http://localhost/workout3d/public
+
+Recargar BD:
+php artisan migrate:fresh --seed
+
+Admin:
+- URL: http://localhost/workout3d/admin/login
+- Usuario: admin
+- Contraseña: admin123
+
+📄 Ver RESUMEN_PROYECTO_WORKOUT3D.txt para documentación completa
