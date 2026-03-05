@@ -31,9 +31,4 @@ Iniciar proyecto:
 Recargar BD:
 php artisan migrate:fresh --seed
 
-Admin:
-- URL: http://localhost/workout3d/admin/login
-- Usuario: admin
-- Contraseña: admin123
-
 📄 Ver RESUMEN_PROYECTO_WORKOUT3D.txt para documentación completa
