@@ -1,5 +1,3 @@
-import './bootstrap';
-
 /**
  * Utilidades globales para toda la aplicación
  */
@@ -32,6 +30,40 @@ document.addEventListener('DOMContentLoaded', () => {
   if (window._INITIAL_TOAST) {
     showToast(window._INITIAL_TOAST.text, window._INITIAL_TOAST.type);
     window._INITIAL_TOAST = null;
+  }
+
+  // Navbar mobile toggle
+  const navToggle = document.getElementById('navToggle');
+  const navPanel = document.getElementById('navPanel');
+  const navbar = document.querySelector('.navbar');
+
+  if (navToggle && navPanel && navbar) {
+    const closeMenu = () => {
+      navbar.classList.remove('is-open');
+      document.body.classList.remove('nav-open');
+      navToggle.setAttribute('aria-expanded', 'false');
+    };
+
+    navToggle.addEventListener('click', () => {
+      const willOpen = !navbar.classList.contains('is-open');
+      navbar.classList.toggle('is-open', willOpen);
+      document.body.classList.toggle('nav-open', willOpen);
+      navToggle.setAttribute('aria-expanded', willOpen ? 'true' : 'false');
+    });
+
+    navPanel.querySelectorAll('a').forEach((link) => {
+      link.addEventListener('click', closeMenu);
+    });
+
+    document.addEventListener('click', (event) => {
+      if (!navbar.classList.contains('is-open')) return;
+      const clickedInsideNavbar = navbar.contains(event.target);
+      if (!clickedInsideNavbar) closeMenu();
+    });
+
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 980) closeMenu();
+    });
   }
 
   // Global Exercise Search (Muscle Pages)

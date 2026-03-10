@@ -1,0 +1,27 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Workout 3D logo arm wave">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#071017"/>
+      <stop offset="1" stop-color="#03080c"/>
+    </linearGradient>
+    <linearGradient id="arm" x1="72" y1="318" x2="340" y2="210" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#e63946"/>
+      <stop offset="1" stop-color="#ff224f"/>
+    </linearGradient>
+    <linearGradient id="wave" x1="315" y1="294" x2="470" y2="294" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00bef0"/>
+      <stop offset="1" stop-color="#44e3ff"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="512" height="512" rx="30" fill="url(#bg)"/>
+  <path opacity="0.28" d="M0 55C101 25 174 95 286 74C389 54 448 14 512 40V0H0V55Z" fill="#0077b6"/>
+  <path opacity="0.18" d="M0 148C96 121 197 188 310 170C405 154 456 116 512 132V78C442 55 387 88 286 108C174 129 102 70 0 98V148Z" fill="#0077b6"/>
+  <path opacity="0.22" d="M0 424C109 384 212 428 324 402C413 381 468 332 512 342V512H0V424Z" fill="#0077b6"/>
+
+  <path d="M74 335C95 276 145 215 209 181C235 168 262 160 284 160C296 160 304 163 311 170L338 193C347 200 350 213 345 223C338 237 320 247 304 245C290 244 274 239 255 232C240 247 226 269 214 292C260 273 316 263 366 270C384 272 395 281 395 294C395 307 384 319 366 327C327 344 271 352 222 352C194 352 172 350 154 346C129 340 99 339 74 335Z" fill="url(#arm)"/>
+
+  <path d="M315 270C334 282 349 300 359 320" stroke="url(#wave)" stroke-width="14" stroke-linecap="round"/>
+  <path d="M342 255C366 273 385 300 398 332" stroke="url(#wave)" stroke-width="14" stroke-linecap="round"/>
+  <path d="M370 239C398 261 421 294 437 340" stroke="url(#wave)" stroke-width="14" stroke-linecap="round"/>
+</svg>

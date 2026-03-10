@@ -1,0 +1,41 @@
+<svg width="920" height="240" viewBox="0 0 920 240" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Workout 3D premium logo A">
+  <defs>
+    <linearGradient id="cardA" x1="0" y1="0" x2="920" y2="240" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0f1416"/>
+      <stop offset="1" stop-color="#071017"/>
+    </linearGradient>
+    <linearGradient id="armA" x1="34" y1="170" x2="236" y2="66" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ff5f72"/>
+      <stop offset="1" stop-color="#e63946"/>
+    </linearGradient>
+    <linearGradient id="waveA" x1="206" y1="129" x2="326" y2="129" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00bef0"/>
+      <stop offset="1" stop-color="#0077b6"/>
+    </linearGradient>
+    <linearGradient id="txtA" x1="360" y1="62" x2="810" y2="176" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#cfdbe4"/>
+    </linearGradient>
+    <clipPath id="clipA">
+      <rect x="0" y="0" width="920" height="240" rx="30"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#clipA)">
+    <rect x="0" y="0" width="920" height="240" rx="30" fill="url(#cardA)"/>
+
+    <path opacity="0.25" d="M0 44C102 18 185 66 286 54C392 42 466 8 560 18C678 30 790 34 920 20V0H0V44Z" fill="#0077b6"/>
+    <path opacity="0.18" d="M0 205C100 172 204 216 319 194C434 171 548 126 681 150C766 165 842 152 920 128V240H0V205Z" fill="#0077b6"/>
+  </g>
+
+  <rect x="0.5" y="0.5" width="919" height="239" rx="29.5" stroke="rgba(255,255,255,0.08)"/>
+
+  <path d="M28 167C43 124 77 80 122 54C141 43 160 37 176 37C185 37 192 39 197 44L216 62C223 68 225 77 221 84C216 94 203 101 191 100C181 98 170 95 157 90C146 101 136 118 128 135C161 122 201 115 236 120C249 122 257 128 257 137C257 147 249 156 236 161C207 173 167 178 131 178C112 178 95 176 83 173C66 170 47 168 28 167Z" fill="url(#armA)"/>
+
+  <path d="M206 118C220 127 231 141 239 157" stroke="url(#waveA)" stroke-width="10" stroke-linecap="round"/>
+  <path d="M226 106C243 119 257 140 267 163" stroke="url(#waveA)" stroke-width="10" stroke-linecap="round"/>
+  <path d="M247 93C267 109 284 133 297 168" stroke="url(#waveA)" stroke-width="10" stroke-linecap="round"/>
+
+  <text x="352" y="132" fill="url(#txtA)" font-family="Oswald, Lato, Arial, sans-serif" font-size="82" font-weight="700" letter-spacing="1.2">WORKOUT</text>
+  <text x="352" y="194" fill="#00bef0" font-family="Oswald, Lato, Arial, sans-serif" font-size="82" font-weight="700" letter-spacing="1.2">3D</text>
+</svg>

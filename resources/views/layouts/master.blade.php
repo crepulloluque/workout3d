@@ -19,7 +19,9 @@
 
     <!-- CSS GLOBALES -->
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/index.css') }}">
+    @if(request()->routeIs('index'))
+        <link rel="stylesheet" href="{{ asset('css/index.css') }}">
+    @endif
 
     <!-- CSS específicos por ruta -->
     @if(request()->is('auth*'))

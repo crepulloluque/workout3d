@@ -1,0 +1,18 @@
+<svg width="320" height="220" viewBox="0 0 320 220" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Workout 3D minimal logo">
+  <defs>
+    <linearGradient id="armMin" x1="28" y1="150" x2="204" y2="78" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#e63946"/>
+      <stop offset="1" stop-color="#ff224f"/>
+    </linearGradient>
+    <linearGradient id="waveMin" x1="188" y1="126" x2="296" y2="126" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00bef0"/>
+      <stop offset="1" stop-color="#44e3ff"/>
+    </linearGradient>
+  </defs>
+
+  <path d="M20 152C33 113 66 73 108 50C126 40 144 34 158 34C166 34 171 36 176 40L193 56C199 61 201 69 198 75C194 84 182 91 172 90C162 89 152 86 140 81C130 91 121 106 113 121C143 109 180 103 213 108C225 109 232 115 232 124C232 133 225 141 213 146C187 157 150 162 117 162C99 162 84 161 73 158C56 155 37 154 20 152Z" fill="url(#armMin)"/>
+
+  <path d="M188 108C200 115 209 126 216 139" stroke="url(#waveMin)" stroke-width="10" stroke-linecap="round"/>
+  <path d="M206 98C222 109 234 127 243 147" stroke="url(#waveMin)" stroke-width="10" stroke-linecap="round"/>
+  <path d="M224 87C242 101 257 122 268 152" stroke="url(#waveMin)" stroke-width="10" stroke-linecap="round"/>
+</svg>

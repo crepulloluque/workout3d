@@ -1,4 +1,11 @@
-import axios from 'axios';
-window.axios = axios;
+if (!window.axios) {
+	window.axios = {
+		defaults: {
+			headers: {
+				common: {}
+			}
+		}
+	};
+}
 
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';

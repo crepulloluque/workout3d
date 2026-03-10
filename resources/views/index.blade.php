@@ -76,6 +76,57 @@
           </div>
         </section>
 
+        <section class="feature-section" aria-labelledby="titulo-features">
+          <div class="section-head">
+            <h2 id="titulo-features" class="section-title">Una plataforma fitness moderna de verdad</h2>
+            <p class="section-description">Todo conectado en una sola experiencia: anatomia 3D, rutinas, progreso y suplementacion.</p>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature-card card animate-fadeInUp">
+              <div class="feature-icon">🧠</div>
+              <h3>Modelos 3D interactivos</h3>
+              <p>Visualiza musculos en detalle para entrenar con precision tecnica y mejor ejecucion.</p>
+            </article>
+            <article class="feature-card card animate-fadeInUp">
+              <div class="feature-icon">📆</div>
+              <h3>Rutinas personalizadas</h3>
+              <p>Crea, ajusta y organiza entrenamientos por dias con una experiencia simple y potente.</p>
+            </article>
+            <article class="feature-card card animate-fadeInUp">
+              <div class="feature-icon">📊</div>
+              <h3>Seguimiento inteligente</h3>
+              <p>Mide peso, grasa y evolucion con graficos para mantener constancia y enfoque.</p>
+            </article>
+            <article class="feature-card card animate-fadeInUp">
+              <div class="feature-icon">🛒</div>
+              <h3>Tienda fitness integrada</h3>
+              <p>Accede a suplementos seleccionados para rendimiento, recuperacion y energia.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="benefits-section" aria-labelledby="titulo-benefits">
+          <div class="section-head">
+            <h2 id="titulo-benefits" class="section-title">Beneficios para tu progreso diario</h2>
+          </div>
+
+          <div class="benefits-grid">
+            <article class="benefit-card card">
+              <h3>Entrena con enfoque</h3>
+              <p>Reduce improvisacion con una estructura clara de ejercicios, dias y metricas.</p>
+            </article>
+            <article class="benefit-card card">
+              <h3>Sube tu motivacion</h3>
+              <p>Visualiza avances reales y convierte cada semana en una mejora medible.</p>
+            </article>
+            <article class="benefit-card card">
+              <h3>Decisiones basadas en datos</h3>
+              <p>Combina rutina, historial y analisis para entrenar con criterio profesional.</p>
+            </article>
+          </div>
+        </section>
+
         <section class="productos-recomendados">
           <div class="section-head">
             <h2 class="section-title">🛒 Suplementacion elite</h2>
@@ -97,6 +148,28 @@
             @empty
               <p class="text-muted" style="grid-column:1/-1; text-align:center;">Nuevos productos en camino...</p>
             @endforelse
+          </div>
+        </section>
+
+        <section class="testimonials-section" aria-labelledby="titulo-testimonios">
+          <div class="section-head">
+            <h2 id="titulo-testimonios" class="section-title">Lo que opinan nuestros usuarios</h2>
+            <p class="section-description">Historias breves de una comunidad que entrena con metodo.</p>
+          </div>
+
+          <div class="testimonials-grid">
+            <article class="testimonial-card card">
+              <p>"El modelo 3D me ayudo a entender mejor cada ejercicio. Entreno con mas seguridad y tecnica."</p>
+              <div class="testimonial-user">Laura M. · Nivel Intermedio</div>
+            </article>
+            <article class="testimonial-card card">
+              <p>"La combinacion de rutinas y progreso me dio orden. Ahora si noto resultados semana a semana."</p>
+              <div class="testimonial-user">Sergio R. · Fuerza y volumen</div>
+            </article>
+            <article class="testimonial-card card">
+              <p>"La plataforma se siente premium y super clara. Todo esta donde tiene que estar."</p>
+              <div class="testimonial-user">Andrea P. · Fitness general</div>
+            </article>
           </div>
         </section>
       </div>
@@ -160,6 +233,18 @@
         </div>
       </aside>
     </div>
+
+    <section class="final-cta" aria-labelledby="titulo-final-cta">
+      <div class="final-cta-content">
+        <p class="hero-kicker">Workout 3D Experience</p>
+        <h2 id="titulo-final-cta">Listo para entrenar con una experiencia premium</h2>
+        <p>Empieza hoy, crea tu rutina y lleva tu progreso al siguiente nivel con una plataforma pensada para resultados reales.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="{{ session()->has('usuario') ? route('crear_rutina') : route('auth') }}">Comenzar ahora</a>
+          <a class="btn btn-secondary" href="{{ route('recursos') }}">Ver recursos</a>
+        </div>
+      </div>
+    </section>
   </div>
 
   <!-- Modal rutinas -->
