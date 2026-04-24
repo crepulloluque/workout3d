@@ -49,7 +49,7 @@
     </div>
 
     <div class="footer-bottom">
-        <p>© {{ date('Y') }} Workout 3D — Crafted with Passion for Fitness.</p>
+        <p>© {{ date('Y') }} Workout 3D — Creado con pasión por el fitness.</p>
     </div>
 </footer>
 
