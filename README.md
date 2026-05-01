@@ -2,7 +2,7 @@
 
 Aplicación Web de Fitness con Modelos 3D interactivos
 
-[![Laravel](https://img.shields.io/badge/Laravel-11-red.svg)](https://laravel.com)
+[![Laravel](https://img.shields.io/badge/Laravel-12-red.svg)](https://laravel.com)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Status](https://img.shields.io/badge/status-Production--Ready-brightgreen.svg)](https://github.com/crepulloluque/Workout3D)
 
@@ -28,7 +28,7 @@ Aplicación Web de Fitness con Modelos 3D interactivos
 
 ## 🚀 Tecnologías
 
-- **Backend**: Laravel 11
+- **Backend**: Laravel 12
 - **Frontend**: Blade Templates + Vanilla JavaScript
 - **Bundler**: Vite
 - **Base de Datos**: SQLite (MySQL compatible)

@@ -30,7 +30,7 @@
 │ 🎯 ESTADO ACTUAL DEL PROYECTO                                               │
 ├─────────────────────────────────────────────────────────────────────────────┤
 │                                                                             │
-│  BACKEND (Laravel 11)                                                       │
+│  BACKEND (Laravel 12)                                                       │
 │  ✅ 19 Controladores implementados                                          │
 │  ✅ Sistema de autenticación completo (Email + OAuth)                       │
 │  ✅ Migraciones de base de datos                                            │
@@ -260,17 +260,17 @@
 ├─────────────────────────────────────────────────────────────────────────────┤
 │                                                                             │
 │  TECNOLOGÍAS PRINCIPALES                                                     │
-│  • Laravel 11: https://laravel.com/docs/11.x                                │
+│  • Laravel 12: https://laravel.com/docs/12.x                                │
 │  • Vite: https://vitejs.dev/guide/                                          │
 │  • Model-Viewer: https://modelviewer.dev/                                   │
 │  • Chart.js: https://www.chartjs.org/docs/latest/                           │
 │  • Sketchfab: https://sketchfab.com/developers/viewer                       │
 │                                                                             │
 │  LARAVEL ESPECÍFICO                                                          │
-│  • Blade Templates: https://laravel.com/docs/11.x/blade                     │
-│  • Eloquent ORM: https://laravel.com/docs/11.x/eloquent                     │
-│  • Migrations: https://laravel.com/docs/11.x/migrations                     │
-│  • Socialite (OAuth): https://laravel.com/docs/11.x/socialite               │
+│  • Blade Templates: https://laravel.com/docs/12.x/blade                     │
+│  • Eloquent ORM: https://laravel.com/docs/12.x/eloquent                     │
+│  • Migrations: https://laravel.com/docs/12.x/migrations                     │
+│  • Socialite (OAuth): https://laravel.com/docs/12.x/socialite               │
 │                                                                             │
 └─────────────────────────────────────────────────────────────────────────────┘
 
