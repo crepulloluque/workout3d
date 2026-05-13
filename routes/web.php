@@ -10,7 +10,7 @@ use App\Http\Controllers\PerfilController;
 use App\Http\Controllers\BicepsController;
 use App\Http\Controllers\PechoController;
 use App\Http\Controllers\AbdomenController;
-use App\Http\Controllers\EspadaController;
+use App\Http\Controllers\EspaldaController;
 use App\Http\Controllers\TricepsController;
 use App\Http\Controllers\PiernasController;
 use App\Http\Controllers\HombrosController;
@@ -62,7 +62,7 @@ Route::post('/perfil', [PerfilController::class, 'update'])->name('perfil.update
 Route::get('/biceps', [BicepsController::class, 'index'])->name('biceps');
 Route::get('/pecho', [PechoController::class, 'index'])->name('pecho');
 Route::get('/abdomen', [AbdomenController::class, 'index'])->name('abdomen');
-Route::get('/espalda', [EspadaController::class, 'index'])->name('espalda');
+Route::get('/espalda', [EspaldaController::class, 'index'])->name('espalda');
 Route::get('/triceps', [TricepsController::class, 'index'])->name('triceps');
 Route::get('/piernas', [PiernasController::class, 'index'])->name('piernas');
 Route::get('/hombros', [HombrosController::class, 'index'])->name('hombros');
