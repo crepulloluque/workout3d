@@ -85,8 +85,12 @@ class TiendaController extends Controller
     /**
      * Elimina un producto del carrito.
      */
-    public function eliminarDelCarrito($id)
+    public function eliminarDelCarrito(Request $request, $id)
     {
+        if (!$request->isMethod('post')) {
+            abort(405);
+        }
+
         $carrito = Session::get('carrito', []);
         
         if (isset($carrito[$id])) {
@@ -100,8 +104,12 @@ class TiendaController extends Controller
     /**
      * Vacía el carrito completo.
      */
-    public function vaciarCarrito()
+    public function vaciarCarrito(Request $request)
     {
+        if (!$request->isMethod('post')) {
+            abort(405);
+        }
+
         Session::forget('carrito');
         return redirect()->route('tienda', ['msg' => 'carrito_vacio']);
     }

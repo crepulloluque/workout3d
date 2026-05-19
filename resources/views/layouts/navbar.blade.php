@@ -36,7 +36,10 @@
         @if(session()->has('usuario'))
           <span class="user-greeting">Hola, <span class="user-name">{{ session('usuario') }}</span></span>
           <a class="btn btn-secondary btn-sm" href="{{ route('perfil') }}" aria-label="Perfil">Perfil</a>
-          <a class="btn btn-ghost btn-sm" href="{{ route('logout') }}" aria-label="Cerrar sesion">Salir</a>
+          <form method="POST" action="{{ route('logout') }}" class="inline-form">
+            @csrf
+            <button type="submit" class="btn btn-ghost btn-sm" aria-label="Cerrar sesion">Salir</button>
+          </form>
         @else
           <a class="btn btn-primary" href="{{ route('auth') }}" aria-label="Iniciar sesion">Iniciar sesion</a>
         @endif

@@ -108,7 +108,10 @@
                                     <div class="name">{{ $item['nombre'] }}</div>
                                     <div class="price">{{ $item['cantidad'] }} unidad(es) &bull; {{ number_format($item['precio'] * $item['cantidad'], 2) }} €</div>
                                 </div>
-                                <a href="{{ route('tienda.eliminar', $id) }}" class="btn btn-ghost remove" title="Eliminar">🗑️</a>
+                                <form method="POST" action="{{ route('tienda.eliminar', $id) }}" class="inline-form">
+                                    @csrf
+                                    <button type="submit" class="btn btn-ghost remove" title="Eliminar">🗑️</button>
+                                </form>
                             </div>
                             @php $total += $item['precio'] * $item['cantidad']; @endphp
                         @endforeach
@@ -120,7 +123,10 @@
                     </div>
 
                     <div class="carrito-actions">
-                        <a href="{{ route('tienda.vaciar') }}" class="btn btn-ghost danger">Vaciar carrito</a>
+                        <form method="POST" action="{{ route('tienda.vaciar') }}" class="inline-form">
+                            @csrf
+                            <button type="submit" class="btn btn-ghost danger">Vaciar carrito</button>
+                        </form>
                         <a href="{{ route('checkout') }}" class="btn btn-primary">Tramitar pedido</a>
                     </div>
                 @else

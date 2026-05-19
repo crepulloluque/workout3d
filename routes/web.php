@@ -27,7 +27,7 @@ Route::get('/', [IndexController::class, 'index'])->name('index');
 Route::get('/auth', [AuthController::class, 'index'])->name('auth');
 Route::post('/login', [AuthController::class, 'login'])->middleware('throttle:5,1')->name('login');
 Route::post('/register', [AuthController::class, 'register'])->middleware('throttle:3,1')->name('register');
-Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
+Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 
 // Verificación de email
 Route::get('/email/verify/{id}/{hash}', [AuthController::class, 'verifyEmail'])->middleware('signed')->name('verification.verify');
@@ -43,8 +43,8 @@ Route::get('/auth/github/callback', [AuthController::class, 'githubCallback'])->
 // Tienda
 Route::get('/tienda', [TiendaController::class, 'index'])->name('tienda');
 Route::post('/tienda/agregar', [TiendaController::class, 'agregarAlCarrito'])->name('tienda.agregar');
-Route::get('/tienda/eliminar/{id}', [TiendaController::class, 'eliminarDelCarrito'])->name('tienda.eliminar');
-Route::get('/tienda/vaciar', [TiendaController::class, 'vaciarCarrito'])->name('tienda.vaciar');
+Route::post('/tienda/eliminar/{id}', [TiendaController::class, 'eliminarDelCarrito'])->name('tienda.eliminar');
+Route::post('/tienda/vaciar', [TiendaController::class, 'vaciarCarrito'])->name('tienda.vaciar');
 
 // Recursos
 Route::get('/recursos', [RecursosController::class, 'index'])->name('recursos');

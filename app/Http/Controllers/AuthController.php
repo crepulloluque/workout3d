@@ -10,6 +10,7 @@ use Illuminate\Support\Facades\Validator;
 use Laravel\Socialite\Facades\Socialite;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
+use Illuminate\Http\Request;
 
 class AuthController extends Controller
 {
@@ -50,8 +51,12 @@ class AuthController extends Controller
     /**
      * Cierra la sesión del usuario
      */
-    public function logout()
+    public function logout(Request $request)
     {
+        if (!$request->isMethod('post')) {
+            abort(405);
+        }
+
         Session::flush();
 
         return redirect()->route('index')
