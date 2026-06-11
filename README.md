@@ -119,6 +119,18 @@ php artisan serve
 - **Usuario**: `admin`
 - **Contraseña**: `admin123`
 - **URL**: `/admin/login`
+- Cambiar contraseña:
+cd c:\laragon\www\workout3d
+php artisan tinker
+
+Dentro de Tinker:
+use Illuminate\Support\Facades\Hash;
+echo Hash::make('admin123');
+
+DB:
+UPDATE administradores
+SET password = '$2y$12$TuHashGeneradoAqui'
+WHERE usuario = 'admin';
 
 ### Usuario Normal
 - Crear cuenta en `/auth` o usar OAuth (Google/GitHub)
