@@ -319,5 +319,5 @@ Este proyecto está bajo la Licencia MIT. Ver el archivo `LICENSE` para más det
 ---
 
 <p align="center">
-  <strong>💪 Proyecto Integrado · 2º DAW · ITEC · Curso 2024–2025</strong>
+  <strong>💪 Proyecto Integrado · 2º DAW · ITEC · Curso 2024–2026</strong>
 </p>
